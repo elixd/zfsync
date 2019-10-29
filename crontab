@@ -1,0 +1,16 @@
+# THIS IS AN EXAMPLE OF CRONTAB FILE FOR ZFSYNC
+# COPY THE SCRIPT TO /usr/local/scripts/
+# chnod +x zfsync.sh TO MAKE IT EXECUTABLE
+# RUN crontab -e TO EDIT THIS FILE
+
+######################### ZFSYNC SCHEDULE ##########################
+# WHEN       SCRIPT DIR                    ZFS_SRC        ZFS_DEST
+  * 1 * * *  /usr/local/scripts/zfsync.sh  tank           backup
+# - - - - -  CRON SYNTAX explained below:
+# | | | | |
+# | | | | ----- Day of week (0 - 7) (Sunday=0 or 7)
+# | | | ------- Month (1 - 12)
+# | | --------- Day of month (1 - 31)
+# | ----------- Hour (0 - 23)
+# ------------- Minute (0 - 59)
+# THE ABOVE SETTING WILL BACKUP tank POOL to backup POOL EVERY DAY AT 1AM
