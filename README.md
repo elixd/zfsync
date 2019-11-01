@@ -1,8 +1,8 @@
 # zfsync
-Bash script for ZFS datases sync and snapshots
+Bash script for ZFS datastes sync and snapshots
 
 ##Current functionality:
-- make periodic snapshots of source dataset (sheduled via crontab)
+- make periodic recursive snapshots of source dataset (sheduled via crontab)
 - replicate to a local zfs dataset
 
 ## Roadmap:
