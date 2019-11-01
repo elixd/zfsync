@@ -5,7 +5,7 @@
 
 ######################### ZFSYNC SCHEDULE ##########################
 # WHEN       SCRIPT DIR                    ZFS_SRC        ZFS_DEST
-  * 1 * * *  /usr/local/scripts/zfsync.sh  tank           backup
+  0 1 * * *  /usr/local/scripts/zfsync.sh  tank           backup
 # - - - - -  CRON SYNTAX explained below:
 # | | | | |
 # | | | | ----- Day of week (0 - 7) (Sunday=0 or 7)
