@@ -1,3 +1,3 @@
 test.md
 
-[link](README.MD)
+[link](README.md)
